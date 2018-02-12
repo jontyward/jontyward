@@ -1,0 +1,51 @@
+#accordion {
+	h3 {
+		position: relative;
+		float: left;
+		width: 100%;
+		color: $white;
+		font-family: 'KGBlankSpaceSolid', arial, serif;
+		padding: 22px 14px;
+		margin-bottom: 0;
+
+		&.ui-accordion-header-collapsed {
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					margin-top: -20px;
+					right: 30px;
+					border-top: 20px solid transparent;
+					border-bottom: 20px solid transparent;
+					border-left: 20px solid $white;
+				}
+		}
+
+		&.ui-accordion-header-active {
+
+				&:after {
+					content: "";
+					position: absolute;
+					top: 50%;
+					margin-top: -10px;
+					right: 30px;
+					border-left: 20px solid transparent;
+					border-right: 20px solid transparent;
+					border-top: 20px solid $white;
+				}
+		}
+
+		&.yellow {
+			background-color: $yellow;
+		}
+		&.grey {
+			background-color: #cccccc;
+		}
+	}
+	z-index: 2;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 120px;
+}

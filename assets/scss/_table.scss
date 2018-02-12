@@ -1,0 +1,59 @@
+table {
+	width: 100%;
+	margin-top: 60px;
+	border: solid 1px #CCCCCC;
+		th {
+			background-color: #CCCCCC;
+			padding: 18px 6px;
+		}
+		td {
+			background-color: $white;
+			border-bottom: solid 1px #CCCCCC;
+			padding: 12px 6px;
+
+				a.edit, a.hold, a.delete {
+					position: relative;
+					float: left;
+					margin: 2px;
+					clear: none;
+					font-family: 'KGBlankSpaceSolid', arial, serif;
+					padding: 2px 8px;
+					min-width: initial;
+					font-size: .8em;
+					color: $white;
+				}
+
+				a.edit {
+					background-color: $blue;
+				}
+
+				a.hold {
+					background-color: $yellow;
+				}
+
+				a.delete {
+					background-color: $red;
+				}
+
+				.forum-link {
+					color: $red;
+				}
+
+				&.buttons {
+					width: 200px;
+				}
+
+				span.number {
+					width: 28px;
+					height: 28px;
+					line-height: 28px;
+					border: solid 1px $grey;
+					display: inline-block;
+					text-align: center;
+				}
+				span.forum-date {
+					margin-right: 20px;
+					font-size: .8em;
+    			}
+		}
+}

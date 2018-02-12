@@ -1,0 +1,92 @@
+.modal {
+	position: fixed;
+	top:0;
+	left:0;
+	display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	background-color: $translucent-black;
+
+		&.modal-active {
+			display: block;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			z-index: 6;
+		}
+}
+
+.modal-container {
+	position: absolute;
+	display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	background-color: #ecebe6;
+
+		&.modal__signup {
+			min-height: 440px;
+		}
+
+		&.modal__signin {
+			min-height: 340px;
+		}
+
+		&.modal__forgotpassword {
+			min-height: 340px;
+		}
+
+		&.modal-active {
+			display: block;
+			overflow: auto;
+			margin: 20px auto 0;
+			left: 50%;
+			margin-left: -159px;
+			width: 318px;
+			z-index: 7;
+			padding: 20px;
+    		box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.45);
+		}
+		.title-border {
+			border-bottom: solid 6px $red;
+		    display: inline-block;
+		    padding-bottom: 8px;
+		    float: left;
+		    clear: both;
+		    position: relative;
+		}
+
+		h2 {
+		    margin-top: 0;
+			color: $grey;
+			font-size: 28px;
+		}
+
+		p {
+			color: $grey;
+			clear: both;
+		}
+
+		a {
+			color: $red;
+		}
+
+	form {
+		div {
+			padding: 0 2px;
+		}
+	}
+}
+
+@media only screen and (min-width: 420px) {
+	.modal-container {
+
+			&.modal-active {
+				width: 420px;
+				margin-left: -210px;
+				height: auto;
+			}
+	}
+
+}

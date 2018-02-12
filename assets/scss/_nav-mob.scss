@@ -1,0 +1,385 @@
+/* -- Start Burger animation -- */
+
+.nav-desktop {
+	display: none;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.nav-mobile {
+
+.burgx, .burgx2, .burgx3 {
+	position: absolute;
+	background-color: $white;
+	width: 30px;
+	left: 19px;
+	height: 4px;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	opacity: 1;
+	-webkit-transition: all 0.4s ease-in-out 0.1s;
+	-o-transition: all 0.4s ease-in-out 0.1s;
+	transition: all 0.4s ease-in-out 0.1s;
+	margin-top: -12px;
+	border-radius: 4px;
+}
+.nav-toggle:hover .burgx3,
+.nav-toggle:hover .burgx2,
+.nav-toggle:hover .burgx {
+	background-color: $white-secondary;
+}
+.burgx2 {
+	margin-top: -1px;
+}
+.burgx3 {
+	margin-top: 10px;
+}
+
+.nav-toggle--true .burgx2 {
+        opacity: 0;
+}
+
+.nav-toggle--true .burgx {
+	margin-top: -1px;
+	-webkit-transform: rotate(-45deg) !important;
+	transform: rotate(-45deg) !important;
+	-moz-transform: rotate(-45deg) !important;
+	-o-transform: rotate(-45deg) !important;
+	background-color: $blue;
+}
+
+.nav-toggle--true .burgx2 {
+	background-color: $blue;
+}
+
+.nav-toggle--true .burgx3 {
+	margin-top: -1px;
+	-webkit-transform: rotate(45deg) !important;
+	transform: rotate(45deg) !important;
+	-moz-transform: rotate(45deg) !important;
+	-o-transform: rotate(45deg) !important;
+	background-color: $blue;
+}
+
+.nav-toggle--true:hover .burgx3,
+.nav-toggle--true:hover .burgx {
+	background-color: $blue;
+}
+
+/* -- End Burger animation -- */
+
+.nav-toggle {
+	position: absolute;
+	float: left;
+	top: 10px;
+	right: 10px;
+	width: 68px;
+	height: 68px;
+	background-color: $blue;
+	padding: 0 !important;
+	margin: 0;
+	border-radius: 100%;
+	border: none;
+	z-index: 5;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+    -webkit-transition: all 300ms ease-in-out 0s;
+	-moz-transition: all 300ms ease-in-out 0s;
+    transition: all 300ms ease-in-out 0s;
+	
+		&.nav-toggle--true {
+			position: fixed;
+			float: right;
+			left: auto;
+			right: 0;
+		    -webkit-transition: all 300ms ease-in-out 0s;
+		    -moz-transition: all 300ms ease-in-out 0s;
+		    transition: all 300ms ease-in-out 0s;
+		    width: 44px;
+		    height: 44px;
+		    margin: 12px 19px;
+		    background-color: $white;
+
+
+				.burgx, .burgx2, .burgx3 {
+					left: 7px;
+				}
+		}
+
+	&:focus {
+    	outline: none;
+	}
+}
+
+nav.nav-wrapper {
+	right: -268px;
+	position: fixed;
+	top: 0;
+	float: right;
+	width: 268px;
+	height: 100%;
+	background-color: $blue;
+	text-transform: uppercase;
+	-webkit-transition: all 300ms ease-in-out 0s;
+	-moz-transition: all 300ms ease-in-out 0s;
+	transition: all 300ms ease-in-out 0s;
+	z-index: 3;
+	font-size: .88em;
+		
+		ul {
+			list-style: none;
+			margin: 0;
+			width: 0;
+			overflow: hidden;
+			position: absolute;
+			top: 72px;
+			-webkit-transition: all 500ms ease-in-out 0s;
+			-moz-transition: all 500ms ease-in-out 0s;
+			transition: all 500ms ease-in-out 0s;
+
+			    li {
+			    	position: relative;
+					float: left;
+					width: 100%;
+					padding: 0;
+
+						&:before {
+							background-image: none;
+							display: none;
+						}
+				}
+		}
+
+		.row {
+			margin: 0;
+		}
+
+		.container-fluid {
+			margin: 0;
+			padding: 0;
+		}
+
+}
+
+nav.user-navigation__visible {
+	display: block;
+	overflow: scroll;
+	right: 0;
+
+		ul {
+			display: block;
+			padding: 0;
+			width: 100%;
+		}
+}
+
+nav ul a {
+	text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+}
+
+nav ul li a {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 12px;
+	font-weight: 700;
+
+	&:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+}
+
+.menu-background {
+	display: none;
+}
+.menu-background--true {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: $translucent-black;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	z-index: 3;
+}
+
+nav.nav-wrapper {
+	nav.primary-navigation {
+		position: relative;
+		float: left;
+		width: 100%;
+		height: auto;
+		right: auto;
+		left: 0;
+		margin-top: 90px;
+
+
+			ul {
+				position: relative;
+				float: left;
+				width: 100%;
+				top: 0;
+				left: 0;
+				right: auto;
+
+					li {
+					}
+
+					a {
+						color: $white;
+					}
+			}
+	}
+}
+	nav.secondary-navigation {
+		position: relative;
+		float: left;
+		width: 100%;
+		height: auto;
+		right: auto;
+		left: 0;
+
+			ul {
+				position: relative;
+				float: left;
+				width: 100%;
+				top: 0;
+				left: 0;
+				right: auto;
+				list-style: none;
+			}
+
+			a {
+				color: white;
+			}
+	}
+	nav.social-navigation {
+		position: relative;
+		float: left;
+		width: 100%;
+		height: auto;
+		right: auto;
+		left: 0;
+
+
+			ul {
+				position: relative;
+				float: left;
+				width: 100%;
+				top: 0;
+				left: 0;
+				right: auto;
+			}
+	}
+
+nav.social-navigation {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	float: left;
+	width: auto;
+	left: 0;
+	background-color: transparent;
+	clear: left;
+		
+		ul {
+			position: relative;
+			float: left;
+			width: auto;
+			padding: 0;
+			margin: 0;
+			top: 0;
+			border: none;
+			list-style: none;
+
+				li {
+					position: relative;
+					float: left;
+					width: auto;
+					border: none;
+					padding: 0;
+
+						a {
+							color: $white;
+							padding: 0 0 0 12px;
+						}
+				}
+		}
+
+			
+			.fa {
+				position: relative;
+				float: left;
+				width: 100%;
+				width: 28px;
+				height: 28px;
+				border-radius: 100%;
+				text-align: center;
+				font-size: 1em;
+				line-height: 28px;
+				margin-top: 5px;
+
+				&.fa-phone {
+					background-color: $red;
+				}
+
+				&.fa-envelope {
+					background-color: $yellow;
+				}
+
+				&.fa-facebook {
+					background-color: $blue;
+				}
+			}
+}
+
+.mobile-nav__ctas {
+	position: relative;
+	float: right;
+		.schools {
+			position: relative;
+			float: left;
+			height: 38px;
+			padding: 0 12px;
+			background-color: $yellow;
+			color: $red;
+			line-height: 38px;
+		}
+		.contact {
+			position: relative;
+			float: left;
+			height: 38px;
+			padding: 0 12px;
+			background-color: $red;
+			color: $white;
+			line-height: 38px;
+		}
+}
+
+}
+@media only screen and (min-width: 375px) {
+
+	.mobile-nav {
+
+		nav.social-navigation {
+				.fa {
+					width: 38px;
+					height: 38px;
+					font-size: 1.4em;
+					line-height: 38px;
+					margin-top: 0;
+					}
+				}
+
+	}
+}

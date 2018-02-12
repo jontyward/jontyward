@@ -1,0 +1,37 @@
+.breadcrumbs {
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: #E6E6E6;
+	color: #6D6C6C;
+		
+		ul {
+			position: relative;
+			float: left;
+			width: 100%;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+
+				li {
+					position: relative;
+					float: left;
+					padding: 0 20px 0 0;
+					height: 40px;
+					line-height: 40px;
+
+						i {
+							position: relative;
+							float: left;
+							width: 20px;
+							height: 40px;
+							line-height: 40px;
+						}
+
+						a {
+							font-weight: bold;
+							color: #6D6C6C;
+						}
+				}
+		}
+}

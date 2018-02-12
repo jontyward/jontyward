@@ -1,0 +1,21 @@
+jQuery(document).ready(function($) {
+  $(".signup-modal-toggle").click(function(){
+    $(".modal__signup").toggleClass("modal-active");
+    $(".modal__signin").removeClass("modal-active");
+    $(".modal__forgotpassword").removeClass("modal-active");
+  });
+  $(".signin-modal-toggle").click(function(){
+    $(".modal__signin").toggleClass("modal-active");
+    $(".modal__signup").removeClass("modal-active");
+    $(".modal__forgotpassword").removeClass("modal-active");
+  });
+  $(".forgotpassword-modal-toggle").click(function(){
+    $(".modal__forgotpassword").toggleClass("modal-active");
+    $(".modal__signin").removeClass("modal-active");
+    $(".modal__signup").removeClass("modal-active");
+  });
+  $(".modal").click(function(){
+    $(".modal").removeClass("modal-active");
+    $(".modal-container").removeClass("modal-active");
+  });
+}(jQuery));

@@ -1,0 +1,193 @@
+@media only screen and (min-width: 768px) {
+	.nav-mobile {
+		display: none;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+	}
+
+	.nav-desktop {
+		position: relative;
+		float: left;
+		width: 100%;
+		height: auto;
+		display: block;
+	
+
+
+
+nav, nav a {
+	color: $blue;
+}
+
+	.mobile-nav__ctas {
+		display: none;
+	}
+
+	nav.social-navigation {
+		clear: none;
+		float: right;
+		margin-top: 28px;
+	}
+
+	nav.primary-navigation {
+		position: relative;
+		float: left;
+		width: 100%;
+		background-color: $blue;
+
+				ul {
+					position: relative;
+					margin: 0 auto;
+					list-style: none;
+					max-width: 1200px;
+					padding: 0 15px;
+
+							li {
+								position: relative;
+								float: left;
+								width: auto;
+								width: 18%;
+								border-left: solid 1px $translucent-white;
+								line-height: 38px;
+								height: 38px;
+								padding-left: 12px;
+								font-family: 'KGBlankSpaceSolid';
+								font-size: 0.9em;
+
+										&:first-child {
+											border-left: none;
+											padding-left: 0px;
+										}
+										
+										&.schools {
+											background-color: $yellow;
+											color: $red;
+											line-height: 38px;
+											width: 15%;
+											text-align: center;
+											padding-left: 0px;
+											font-size: 1.2em;
+										}
+										&.contact {
+											background-color: $red;
+											color: $white;
+											width: 13%;
+											text-align: center;
+											padding-left: 0px;
+											font-size: 1.2em;
+										}
+
+										a {
+											position: relative;
+											float: left;
+											width: 100%;
+											color: $white;
+										}
+
+										i {
+											position: relative;
+											float: right;
+											font-size: 28px;
+											height: 38px;
+											line-height: 41px;
+											margin-right: 4px;
+										}
+							}
+				}
+	}
+
+nav.social-navigation {
+	padding: 0;
+	margin: 0;
+	position: relative;
+	float: right;
+	width: 120px;
+	background-color: transparent;
+		
+		ul {
+			position: relative;
+			float: right;
+			width: auto;
+			padding: 0;
+			margin: 0;
+			top: 0;
+			border: none;
+			list-style: none;
+
+				li {
+					position: relative;
+					float: left;
+					width: auto;
+					border: none;
+					padding: 12px 0 0 0;
+
+						a {
+							position: relative;
+							float: left;
+							color: $white;
+							padding: 0;
+							margin-left: 12px;
+						}
+				}
+
+				.fa {
+					position: relative;
+					float: left;
+					width: 100%;
+					width: 28px;
+					height: 28px;
+					border-radius: 100%;
+					text-align: center;
+					font-size: 1em;
+					line-height: 28px;
+					margin-top: 18px;
+
+						&.fa-phone {
+							background-color: $red;
+						}
+
+						&.fa-envelope {
+							background-color: $yellow;
+						}
+
+						&.fa-facebook {
+							background-color: $blue;
+						}
+				}
+		}
+}
+
+	nav.secondary-navigation {
+		position: relative;
+		float: right;
+		width: 508px;
+
+				ul {
+					position: relative;
+					float: right;
+					list-style: none;
+					padding: 0;
+					margin: 30px 0;
+
+							li {
+								position: relative;
+								float: left;
+								width: auto;
+								padding: 0 8px;
+								border-left: solid 1px #6D6C6C;
+
+										&:first-child {
+											border-left: none;
+										}
+
+										a {
+											color: #6D6C6C;
+										}
+							}
+				}
+	}
+
+	}
+}
+

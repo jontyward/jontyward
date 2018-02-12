@@ -1,0 +1,57 @@
+footer {
+	position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #f5f8fb;
+    border-top: solid 1px #3c3c3b;
+
+    	.footer--icons {
+		    position: relative;
+		    float: left;
+		    width: 100%;
+		    margin: 20px 0 0 0;
+		    text-align: center;
+
+		    	i {
+		    	    width: 44px;
+				    height: 44px;
+				    margin: 12px;
+				    line-height: 48px;
+				    border-radius: 100%;
+				    color: white;
+				    font-size: 1.6em;
+
+				    	&.fa-twitter {
+    						background-color: #1a8bf0;
+    					}
+
+				    	&.fa-dribbble {
+    						background-color: #ea4c89;
+    					}
+
+				    	&.fa-linkedin {
+    						background-color: #0077b5;
+    					}
+
+				    	&.fa-envelope {
+    						background-color: #3c3c3b;
+    					}
+		    	}
+    	}
+}
+
+@media only screen and (min-width: 768px) {
+		footer {
+
+		    	.footer--icons {
+
+				    	i {
+				    	    width: 66px;
+						    height: 66px;
+						    line-height: 68px;
+						    font-size: 2em;
+						}
+				}
+		}
+}

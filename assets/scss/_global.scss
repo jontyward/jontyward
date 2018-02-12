@@ -1,0 +1,99 @@
+body { 
+    width: 100%;
+    margin: 0;
+    line-height: 1.8em;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: #2c2c53;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    background-image: url(img/home_banner-bg.png);
+    background-size: 100% 598px;
+    background-repeat: no-repeat;
+}
+
+.fl {
+	float: left !important;
+}
+
+.fr {
+	float: right !important;
+}
+.content-holder {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    width: 100%;
+	padding: 12px;
+}
+
+.content {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.font-white {
+	color: $white !important;
+}
+
+.font-red {
+    color: $red !important;
+}
+
+.font-blue {
+    color: $blue !important;
+}
+
+.font-yellow {
+    color: $yellow !important;
+}
+
+.bg-blue {
+    background-color: $blue !important;
+}
+
+.bg-red {
+    background-color: $red !important;
+}
+
+.bg-white {
+    background-color: $white !important;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.mt {
+    margin-top: 20px;
+}
+
+.mt-lrg {
+    margin-top:60px !important;
+}
+
+.m0 {
+    margin: 0 !important;
+}
+
+section {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+
+    .clear-both {
+        clear: both;
+    }
+    .clear-left {
+        clear: left;
+    }
+    .clear-right {
+        clear: right;
+    }
